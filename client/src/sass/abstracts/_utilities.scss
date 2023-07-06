@@ -1,0 +1,184 @@
+.heading-primary {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: right;
+  @include respond(phone) {
+    font-size: 4rem;
+    
+  }
+}
+
+.heading-perm {
+  font-family: $permanent-marker;
+  font-size: 6rem;
+  // text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: right;
+  @include respond(phone) {
+    font-size: 4rem;
+    
+  }
+}
+
+.heading-sec {
+  &__mb-bg {
+    margin-bottom: 11rem;
+    @include respond(tab-port) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__mb-med {
+    // margin-bottom: 9rem;
+    @include respond(tab-port) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__main {
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    &--lt {
+      color: #fff;
+      &::after {
+        content: '';
+        background: #fff !important;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: calc(100% + 1.5rem);
+      height: 5px;
+      width: 3rem;
+      background: $themeClrPrimary;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: $commonBorderRadius;
+
+      @include respond(phone) {
+        top: calc(100% + 1.2rem);
+      }
+    }
+  }
+
+  &__sub {
+    display: block;
+    text-align: left;
+    color: #777;
+    font-size: 2rem;
+    font-weight: 500;
+    max-width: 80rem;
+    margin: auto;
+    // margin-top: 1rem;
+    // margin-bottom: 1rem;
+    line-height: 1.6;
+
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
+
+    &--lt {
+      color: #eee;
+    }
+  }
+}
+
+.heading-sm {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main-container {
+  max-width: 120rem;
+  margin: auto;
+  width: 92%;
+}
+
+.btn {
+  background: #fff;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: $commonBorderRadius;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &--bg {
+    background-color: $themeClrPrimary;
+    padding: 1.5rem 8rem;
+    font-size: 2rem;
+  }
+  &--med {
+    padding: 1.5rem 5rem;
+    font-size: 1.6rem;
+  }
+  &--theme {
+    background: $themeClrPrimary;
+    color: #fff;
+  }
+  &--theme-inv {
+    color: $themeClrPrimary;
+    background: #fff;
+    border: 2px solid $themeClrPrimary;
+    box-shadow: none;
+    padding: calc(1.5rem - 2px) calc(5rem - 2px);
+  }
+  &--center {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+}
+
+.sec-pad {
+  padding: 9rem 0 6rem 0;
+  @include respond(tab-port) {
+    padding: 6rem 0 4rem 0;
+  }
+}
+// .sec-pad-before {
+//   padding: 12rem 0 0 0;
+//   @include respond(tab-port) {
+//     padding: 8rem 0 0 0;
+//   }
+// }
+// .sec-pad-after {
+//   padding: 0 0 12rem 0;
+//   @include respond(tab-port) {
+//     padding: 0 0 8rem 0;
+//   }
+// }
+
+.text-primary {
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: right;
+  width: 100%;
+  line-height: 1.6;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
+
+
+.d-none {
+  display: none;
+}
