@@ -1,9 +1,14 @@
-
+import { useState } from "react"
 
 
 export default function SkillsSection() {
 
+  const [active, setActive] = useState("")
 
+  const handleClick = (event) => {
+    (event.target.id === active) ? (setActive("")) : (setActive(event.target.id));
+    console.log(event.target.id)
+  }
 
   return (
     <section id ="skills" className="skills sec-pad">
@@ -17,70 +22,79 @@ export default function SkillsSection() {
           <div className="skills__content-skills">
 
             {/*SOFTWARE & WEB DEVELOPMENT*/}
-            <button className="skills__content-title accordion">Software Engineering</button>
-              <div className="panel">
-                <h4 className="skills__content-subtitle">Languages</h4>
-                <div className="skills">
-                  <div className="skills__program">HTML</div>
-                  <div className="skills__program">CSS</div>
-                  <div className="skills__program">JavaScript</div>
-                  <div className="skills__program">Ruby</div>
-                  <div className="skills__program">SQL</div>
-                </div>
+            <button 
+              className={`skills__content-title accordion${(active === "software-engineering") ? " active" : ""}`}
+              id="software-engineering"
+              onClick={handleClick}
+            >Software Engineering</button>
 
-                <h4 className="skills__content-subtitle">Frameworks, Libraries, & Plugins</h4>
-                <div className="skills">
-                  <div className="skills__skill">React</div>
-                  <div className="skills__skill">Redux</div>
-                  <div className="skills__skill">Ruby on Rails</div>
-                  <div className="skills__skill">Rails Admin</div>
-                  <div className="skills__skill">SASS</div>
-                  <div className="skills__skill">Tailwind CSS</div>
-                  <div className="skills__skill">Daisy UI</div>
-                  <div className="skills__skill">Semantic UI</div>
-                </div>
-
-                <h4 className="skills__content-subtitle">Platforms, Environments, & Other Tools</h4>
-                <div className="skills">
-                  <div className="skills__skill">Github</div>
-                  <div className="skills__skill">Wordpress</div>
-                  <div className="skills__skill">Node.js</div>
-                  <div className="skills__skill">NPM & NPX</div>
-                  <div className="skills__skill">PostgreSQL</div>
-                  <div className="skills__skill">SQLite3</div>
-                  <div className="skills__skill">Rails Views</div>
-                  <div className="skills__skill">Vite</div>
-                  <div className="skills__skill">Create React App</div>
-                  <div className="skills__skill">VS Code</div>
-                  <div className="skills__skill">Postman</div>
-                  <div className="skills__skill">Postman</div>              
-                </div>
-
-                <h4 className="skills__content-subtitle">Skills & Principles</h4>
-                <div className="skills">
-                  <div className="skills__skill">Front End</div>
-                  <div className="skills__skill">Back End</div>
-                  <div className="skills__skill">Full Stack</div>
-                  <div className="skills__skill">Web Development</div>
-                  <div className="skills__skill">Web & UI Design</div>
-                  <div className="skills__skill">CRUD & Custom API's</div>
-                  <div className="skills__skill">RESTful Routing</div>
-                  <div className="skills__skill">Object-Oriented Programming</div>
-                  <div className="skills__skill">Version Control</div>
-                  <div className="skills__skill">Branch Management</div>
-                  <div className="skills__skill">Clean Code</div>
-                  <div className="skills__skill">Refactoring & Optimization</div>
-                  <div className="skills__skill">Disks & Cloud Storage</div>
-                  <div className="skills__skill">Authentication & Authorization</div>
-                  <div className="skills__skill">Data Validations</div>
-                  <div className="skills__skill">Client-Side Routing</div>
-                </div>
+            <div className={`panel${(active === "software-engineering") ? " active" : ""}`}>
+              <h4 className="skills__content-subtitle">Languages</h4>
+              <div className="skills">
+                <div className="skills__program">HTML</div>
+                <div className="skills__program">CSS</div>
+                <div className="skills__program">JavaScript</div>
+                <div className="skills__program">Ruby</div>
+                <div className="skills__program">SQL</div>
               </div>
 
-            {/*MEDIA PRODUCTION*/}
-            <button className="skills__content-title accordion">Media Production</button>
+              <h4 className="skills__content-subtitle">Frameworks, Libraries, & Plugins</h4>
+              <div className="skills">
+                <div className="skills__skill">React</div>
+                <div className="skills__skill">Redux</div>
+                <div className="skills__skill">Ruby on Rails</div>
+                <div className="skills__skill">Rails Admin</div>
+                <div className="skills__skill">SASS</div>
+                <div className="skills__skill">Tailwind CSS</div>
+                <div className="skills__skill">Daisy UI</div>
+                <div className="skills__skill">Semantic UI</div>
+              </div>
 
-            <div className="panel">
+              <h4 className="skills__content-subtitle">Platforms, Environments, & Other Tools</h4>
+              <div className="skills">
+                <div className="skills__skill">Github</div>
+                <div className="skills__skill">Wordpress</div>
+                <div className="skills__skill">Node.js</div>
+                <div className="skills__skill">NPM & NPX</div>
+                <div className="skills__skill">PostgreSQL</div>
+                <div className="skills__skill">SQLite3</div>
+                <div className="skills__skill">Rails Views</div>
+                <div className="skills__skill">Vite</div>
+                <div className="skills__skill">Create React App</div>
+                <div className="skills__skill">VS Code</div>
+                <div className="skills__skill">Postman</div>
+                <div className="skills__skill">Postman</div>              
+              </div>
+
+              <h4 className="skills__content-subtitle">Skills & Principles</h4>
+              <div className="skills">
+                <div className="skills__skill">Front End</div>
+                <div className="skills__skill">Back End</div>
+                <div className="skills__skill">Full Stack</div>
+                <div className="skills__skill">Web Development</div>
+                <div className="skills__skill">Web & UI Design</div>
+                <div className="skills__skill">CRUD & Custom API's</div>
+                <div className="skills__skill">RESTful Routing</div>
+                <div className="skills__skill">Object-Oriented Programming</div>
+                <div className="skills__skill">Version Control</div>
+                <div className="skills__skill">Branch Management</div>
+                <div className="skills__skill">Clean Code</div>
+                <div className="skills__skill">Refactoring & Optimization</div>
+                <div className="skills__skill">Disks & Cloud Storage</div>
+                <div className="skills__skill">Authentication & Authorization</div>
+                <div className="skills__skill">Data Validations</div>
+                <div className="skills__skill">Client-Side Routing</div>
+              </div>
+            </div>
+
+            {/*MEDIA PRODUCTION*/}
+            <button 
+              className={`skills__content-title accordion${(active === "media-production") ? " active" : ""}`}
+              id="media-production"
+              onClick={handleClick}
+            >Media Production</button>
+
+            <div className={`panel${(active === "media-production") ? " active" : ""}`}>
               <h4 className="skills__content-subtitle">Software Programs</h4>
 
               <div className="skills">
@@ -145,8 +159,12 @@ export default function SkillsSection() {
 
 
             {/*ENTREPRENEURSHIP & BUSINESS DEVELOPMENT*/}
-            <button className="skills__content-title accordion">Entrepreneurship & Business Development</button>
-              <div className="panel">
+            <button 
+              className={`skills__content-title accordion${(active === "entrepreneurship-and-business") ? " active" : ""}`}
+              id="entrepreneurship-and-business"
+              onClick={handleClick}
+            >Entrepreneurship & Business Development</button>
+              <div className={`panel${(active === "entrepreneurship-and-business") ? " active" : ""}`}>
                 <h4 className="skills__content-subtitle">Industries</h4>
                 <div className="skills">
                   <div className="skills__program">Music Industry</div>
@@ -184,9 +202,13 @@ export default function SkillsSection() {
                 </div>
               </div>
 
-            {/*ENTREPRENEURSHIP & BUSINESS DEVELOPMENT*/}
-            <button className="skills__content-title accordion">Music Composition & Performance</button>
-              <div className="panel">
+            {/*MUSIC COMPOSITION & PERFORMANCE*/}
+            <button 
+              className={`skills__content-title accordion${(active === "music-composition-and-performance") ? " active" : ""}`}
+              id="music-composition-and-performance"
+              onClick={handleClick}
+            >Music Composition & Performance</button>
+              <div className={`panel${(active === "music-composition-and-performance") ? " active" : ""}`}>
                 <h4 className="skills__content-subtitle">Instruments</h4>
                 <div className="skills">
                   <div className="skills__program">Drums & Percussion</div>
