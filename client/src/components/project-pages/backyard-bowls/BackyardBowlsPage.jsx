@@ -1,7 +1,7 @@
 
 
 
-export default function MusicAccordion() {
+export default function BackyardBowlsPage() {
 
 
 

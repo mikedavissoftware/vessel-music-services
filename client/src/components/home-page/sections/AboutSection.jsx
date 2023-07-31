@@ -20,7 +20,7 @@ export default function AboutSection() {
           </p>
           <br/>
           <p className="heading-sec__sub">
-            As a part of the music scene, I co-founded and served as drummer-producer for the independent prog-punk band <a href="https://linktr.ee/chessatbreakfast" target="_blank">Chess at Breakfast</a>. Despite the local dominance of folk & americana music, my band achieved substantial success in the Fort Collins scene. Over our five-year run (2016-2021), we played over 70 shows, successfully booked 2 regional tours, and self-produced & released 3 albums. Running an independent music business required the development of many skills in music, audio, video, graphic design, event production, and business management. (See <a href="./index.html#skills">My Skills</a> below for a more specific list.)
+            As a part of the music scene, I co-founded and served as drummer-producer for the independent prog-punk band <a href="https://linktr.ee/chessatbreakfast" target="_blank">Chess at Breakfast</a>. Despite the local dominance of folk & americana music, my band achieved substantial success in the Fort Collins scene. Over our five-year run (2016-2021), we played over 70 shows, successfully booked 2 regional tours, and self-produced & released 3 albums. Running an independent music business required the development of many skills in music, audio, video, graphic design, event production, and business management. (See <a href="#skills">My Skills</a> below for a comprehensive list.)
           </p>
           <br/>
           <p className="heading-sec__sub">
@@ -38,7 +38,7 @@ export default function AboutSection() {
           <p className="heading-sec__sub">
             <em>If you're interested in hiring me, collaborating, inquiring about my areas of expertise, or simply getting to know me better, don't hesitate to reach out. I'm always happy to connect with someone new!</em>
           </p>
-          <a href="./#contact" id="get-in-touch-btn" className="btn btn--med btn--theme btn--center dynamicBgClr">Get in Touch!</a>
+          <a href="#contact" id="get-in-touch-btn" className="btn btn--med btn--theme btn--center dynamicBgClr">Get in Touch!</a>
         </h2>
       </div>
     </section>

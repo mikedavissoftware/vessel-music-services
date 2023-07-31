@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import ProfilePicture from "../assets/jpeg/mds-prof-pic-close-square.jpg"
 import LinkedInLogoBlack from "../assets/png/black/linkedin-ico-black.png"
 import GithubLogoBlack from "../assets/png/black/github-ico-black.png"
@@ -7,6 +9,7 @@ import HamMenuClose from "../assets/svg/ham-menu-close.svg"
 
 export default function Header() {
 
+  const [active, setActive] = useState(false)
 
   return (
     <header className="header">
@@ -62,22 +65,25 @@ export default function Header() {
               <a href="./#contact" className="header__link"> Contact </a>
             </li>
           </ul>
+          
           <div className="header__main-ham-menu-cont">
             <img
               src={HamMenu}
               alt="hamburger menu"
-              className="header__main-ham-menu"
+              className={`header__main-ham-menu${(active) ? (" d-none") : ("")}`}
+              onClick={() => {setActive(!active)}}
             />
             <img
               src={HamMenuClose}
               alt="hamburger menu close"
-              className="header__main-ham-menu-close d-none"
+              className={`header__main-ham-menu-close${(active) ? ("") : (" d-none")}`}
+              onClick={() => {setActive(!active)}}
             />
           </div>
         </div>
       </div>
 
-      <div className="header__sm-menu">
+      <div className={`header__sm-menu${(active) ? ("--active") : ("")}`}>
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
             <li className="header__sm-menu-link">
