@@ -18,7 +18,7 @@ export default function SpiritualDirectionCard() {
         />
       </div>
       <div class="projects__row-content">
-        <h3 class="projects__row-content-title">Project 2</h3>
+        <h3 class="projects__row-content-title">Spiritual Direction</h3>
         <p class="projects__row-content-desc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
           facilis tempora, explicabo quae quod deserunt eius sapiente
