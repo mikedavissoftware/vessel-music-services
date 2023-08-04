@@ -12,19 +12,29 @@ export default function AboutSection() {
           <span className="heading-sec__main">About Me</span>
 
           <p className="heading-sec__sub">
-            Ever since I was a kid, I've loved taking devices apart and putting them back together. That early interest in learning how systems work later evolved into assembling my first desktop computer at the age of 13, and subsequently taking four years of CAD-focused mechanical engineering classNamees throughout high school. I later pursued a mathematics-heavy major in ecological engineering at Colorado State University for two years, until switching to the broader science of restoration ecology. Despite switching my major, the remainder of my undergraduate curriculum was well-supported by what I learned in my engineering courses, and I graduated in 2016 with a BS in Restoration Ecology.
+            Vessel is a music supervision company specializing in sync licensing for film marketing, advertising content, TV programming, video games, podcasts, and feature films. We facilitate the music vision for media creatives and companies of all sizes by curating music that amplifies their stories accurately and punctually.
+          </p>
+          <br/>
+          <hr/>
+          <p className="heading-sec__sub">
+            <strong>
+              So, what's a music supervisor?
+            </strong>
           </p>
           <br/>
           <p className="heading-sec__sub">
-            Throughout my schooling and beyond, I have always been a self-starter, pursuing a diversity of independent ventures in freelancing, nonprofits, and both the music & film industries.
+            A <a href="https://www.guildofmusicsupervisors.com/what-is-a-music-supervisor">music supervisor</a> is the head of the music department that oversees all aspects of music on a project / production.  They collaborate with key decision-makers to help determine the musical vision within the budget.
+          </p>
+          <br/>
+          <hr/>
+          <p className="heading-sec__sub">
+            <strong>
+              Why should I hire a music supervisor?
+            </strong>
           </p>
           <br/>
           <p className="heading-sec__sub">
-            As a part of the music scene, I co-founded and served as drummer-producer for the independent prog-punk band <a href="https://linktr.ee/chessatbreakfast" target="_blank">Chess at Breakfast</a>. Despite the local dominance of folk & americana music, my band achieved substantial success in the Fort Collins scene. Over our five-year run (2016-2021), we played over 70 shows, successfully booked 2 regional tours, and self-produced & released 3 albums. Running an independent music business required the development of many skills in music, audio, video, graphic design, event production, and business management. (See <a href="#skills">My Skills</a> below for a comprehensive list.)
-          </p>
-          <br/>
-          <p className="heading-sec__sub">
-            In addition to my contributions to the art community, I also co-founded and currently serve as the director of media production for an educational 501(c)(3) Nonprofit Organization called <a href="https://theechofilm.com/" target="_blank">The Echo</a>. My experience within this organization has involved many of the same duties as those of running my band, but with divergent end goals. Guided by our paramount objective of educating the public about animals, I've overseen the production of short-form documentaries, social media content, and recently a new podcast called <a href="http://onewildpodcast.com/" target="_blank">One Wild World</a>.
+            You hire a music supervisor to ensure that the project’s deliverables are accurate and accounted for as well as creative vision intact sonically within budget.  In return, this saves the project money and time.
           </p>
           <br/>
           <p className="heading-sec__sub">

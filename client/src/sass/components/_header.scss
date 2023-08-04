@@ -140,16 +140,9 @@
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
 
     &--active {
-      // visibility: hidden;
-      // opacity: 1;
-   
-      // @include respond(phone) {
-        // visibility: visible;
-        opacity: 1;
-        background: rgba(255, 255, 255, 1);
-        transition: all 1s;
-        // transition: 2s;
-      // }
+      opacity: 1;
+      background: rgba(255, 255, 255, 1);
+      transition: all 1s;
     }
   }
 

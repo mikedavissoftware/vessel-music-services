@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import ProfilePicture from "../assets/jpeg/mds-prof-pic-close-square.jpg"
+import ProfilePicture from "../assets/jpeg/vessel sound logo v3 blue wave.jpg"
 import LinkedInLogoBlack from "../assets/png/black/linkedin-ico-black.png"
 import GithubLogoBlack from "../assets/png/black/github-ico-black.png"
 import YouTubeLogoBlack from "../assets/png/black/yt-ico-black.png"
@@ -23,7 +23,7 @@ export default function Header() {
             />
           </div>
           
-          <span className="header__logo-sub">Mike Davis</span>
+          <span className="header__logo-sub">Vessel Music Services</span>
         </div>
 
         <div className="header__social-cont">
