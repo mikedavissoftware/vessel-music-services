@@ -8,7 +8,7 @@ export default function HeroSection() {
 
 
   return (
-    <section className="home-hero">
+    <section id="home-hero" className="home-hero">
       <div className="home-hero__content">
         <h1 className="heading-primary">Hey there!</h1>
         <h1 className="heading-perm">I'm Mike</h1>

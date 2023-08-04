@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
+import MockupImage from "../../../../../assets/png/project-mockup-masked/project-mockup-masked.png"
 
 
-
-export default function BackyardBowlsProject() {
+export default function SpiritualDirectionCard() {
 
 
 
@@ -9,7 +11,7 @@ export default function BackyardBowlsProject() {
     <div class="projects__row">
       <div class="projects__row-img-cont">
         <img
-          src="./assets/jpeg/project-mockup-example.jpeg"
+          src={MockupImage}
           alt="Software Screenshot"
           class="projects__row-img"
           loading="lazy"
@@ -22,12 +24,11 @@ export default function BackyardBowlsProject() {
           facilis tempora, explicabo quae quod deserunt eius sapiente
           praesentium.
         </p>
-        <a
-          href="./project-2.html"
+        <Link 
+          to="/spiritual-direction"
           class="btn btn--med btn--theme dynamicBgClr"
           target="_blank"
-          >Case Study</a
-        >
+        >Case Study</Link>
       </div>
     </div>
   )

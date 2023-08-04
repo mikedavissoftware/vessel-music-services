@@ -1,6 +1,6 @@
-import DaggettControlProject from "./individual-projects/DaggettControlProject"
-import SpiritualDirectionProject from "./individual-projects/SpiritualDirectionProject"
-import BackyardBowlsProject from "./individual-projects/BackyardBowlsProject"
+import DaggettControlCard from "./individual-projects/DaggettControlCard"
+import SpiritualDirectionCard from "./individual-projects/SpiritualDirectionCard"
+import BackyardBowlsCard from "./individual-projects/BackyardBowlsCard"
 
 
 export default function ProjectsSection() {
@@ -18,9 +18,9 @@ export default function ProjectsSection() {
         </h2>
 
         <div class="projects__content">
-          <DaggettControlProject />
-          <SpiritualDirectionProject />
-          <BackyardBowlsProject />
+          <DaggettControlCard />
+          <SpiritualDirectionCard />
+          <BackyardBowlsCard />
         </div>
       </div>
     </section>

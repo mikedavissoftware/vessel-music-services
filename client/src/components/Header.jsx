@@ -53,7 +53,7 @@ export default function Header() {
         <div className="header__main">
           <ul className="header__links">
             <li className="header__link-wrapper">
-              <a href="./" className="header__link"> Home </a>
+              <a href="./#home-hero" className="header__link"> Home </a>
             </li>
             <li className="header__link-wrapper">
               <a href="./#about" className="header__link"> About </a>
@@ -87,19 +87,19 @@ export default function Header() {
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
             <li className="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+              <a href="./#home-hero" onClick={() => setActive(false)}> Home </a>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+              <a href="./#about" onClick={() => setActive(false)}> About </a>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+              <a href="./#projects" onClick={() => setActive(false)}> Projects </a>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+              <a href="./#contact" onClick={() => setActive(false)}> Contact </a>
             </li>
           </ul>
         </div>
