@@ -13,10 +13,10 @@ export default function HeroSection() {
     <section id="home-hero" className="home-hero">
       <div className="home-hero__content">
         <h1 className="heading-primary">Welcome to Vessel</h1>
-        <h1 className="heading-perm">Sync Or Swim, Bitch</h1>
+        {/* <h1 className="heading-perm">Sync Or Swim, Bitch</h1> */}
         <div className="home-hero__info">
           <p className="text-primary">
-            I am a full-stack software engineer, multimedia producer, creative entrepreneur, & musician with a passion for building efficient systems and a persistent hunger for learning new skills.
+            Delivering Music from Under the Surface
           </p>
         </div>
         <div className="home-hero__cta">
@@ -26,7 +26,7 @@ export default function HeroSection() {
 
       <div className="home-hero__socials">
         <div className="home-hero__social">
-          <a href="https://www.instagram.com/vessel.sound/" className="home-hero__social-icon-link">
+          <a href="https://www.instagram.com/vessel.sound/" className="home-hero__social-icon-link" target="_blank">
             <img
               src={InstagramLogoWhite}
               alt="icon"
@@ -35,7 +35,7 @@ export default function HeroSection() {
           </a>
         </div>
         <div className="home-hero__social">
-          <a href="https://www.facebook.com/vesselsoundx/" className="home-hero__social-icon-link">
+          <a href="https://www.facebook.com/vesselsoundx/" className="home-hero__social-icon-link" target="_blank">
             <img
               src={FacebookLogoWhite}
               alt="icon"
@@ -44,7 +44,7 @@ export default function HeroSection() {
           </a>
         </div>
         <div className="home-hero__social">
-          <a href="https://linktr.ee/vesselsound/" className="home-hero__social-icon-link">
+          <a href="https://linktr.ee/vesselsound/" className="home-hero__social-icon-link" target="_blank">
             <img
               src={LinktreeLogoWhite}
               alt="icon"
@@ -53,7 +53,7 @@ export default function HeroSection() {
           </a>
         </div>
         <div className="home-hero__social">
-          <a href="mailto:caleb@vesselsound.com" className="home-hero__social-icon-link">
+          <a href="mailto:caleb@vesselsound.com" className="home-hero__social-icon-link" target="_blank">
             <img
               src={EmailLogoWhite}
               alt="icon"

@@ -183,3 +183,21 @@
   opacity: 0;
   transition: .4s;
 }
+
+.small-divider {
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 3rem;
+    background: $themeClrPrimary;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: $commonBorderRadius;
+  }
+
+  @include respond(phone) {
+    top: calc(100% + 1.2rem);
+  }
+}
