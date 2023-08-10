@@ -12,11 +12,9 @@
     align-items: center;
     padding: 1rem 5rem;
     @include respond(tab-port) {
-      // grid-template-columns: auto 30% 20%;
       display: grid;
       padding: 0 2rem;
       grid-template-columns: 16rem auto 38rem;
-
     }
     @include respond(phone) {
       display: grid;

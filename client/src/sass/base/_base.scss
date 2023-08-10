@@ -67,16 +67,16 @@ p > a {
   text-decoration: underline;
 }
 p > a:link {
-  color: $themeClrPrimary;
+  color: $darkBlue;
 }
 p > a:visited {
-  color: $themeClrPrimary;
+  color: $darkBlue;
 }
 p > a:hover {
-  color: #00de07;
+  color: $lightBlue;
 }
 p > a:active {
-  color: $themeClrSecondary;
+  color: $tan;
 }
 
 hr.primary {
@@ -180,4 +180,31 @@ hr.secondary {
 
 #get-in-touch-btn {
   margin-top: 4rem;
+}
+
+.name-card {
+  // margin: 9rem;
+  // display: flex;
+  display: grid;
+  // padding: 2rem 5rem;
+  grid-template-columns: 40% auto;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  // padding: 1rem 5rem;
+  @include respond(tab-port) {
+    margin: 2rem;
+    display: grid;
+    padding: 0 2rem;
+    // grid-template-columns: 16rem auto 38rem;
+  }
+  @include respond(phone) {
+    display: grid;
+    // grid-template-columns: 16rem auto 4rem;
+  }
+}
+
+.name-card > div > img {
+  width: 100%;
+  border-radius: 400px;
 }

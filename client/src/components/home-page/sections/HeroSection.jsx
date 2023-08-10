@@ -19,9 +19,9 @@ export default function HeroSection() {
             Delivering Music from Under the Surface
           </p>
         </div>
-        <div className="home-hero__cta">
+        {/* <div className="home-hero__cta">
           <a href="./#projects" className="btn btn--bg">Check Out My Projects</a>
-        </div>
+        </div> */}
       </div>
 
       <div className="home-hero__socials">

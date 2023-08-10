@@ -15,7 +15,6 @@ export default function HomePage() {
       <HeroSection />
       <AboutVesselSection />
       <OurTeamSection />
-      <SkillsSection />
       <ProjectsSection />
       <ContactSection />
     </div>

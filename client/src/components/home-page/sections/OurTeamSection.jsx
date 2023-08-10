@@ -1,55 +1,36 @@
-
-
+import Placeholder from "../../../assets/jpeg/vessel sound logo v3 blue wave.jpg"
+import CalebPicture from "../../../assets/jpeg/fence-pic-square-crop.jpeg"
 
 export default function OurTeamSection() {
 
 
 
   return (
-    <section id="about" className="about sec-pad">
+    <section id="team" className="team sec-pad">
       <div className="main-container">
         <h2 className="heading heading-sec heading-sec__mb-med">
           <span className="heading-sec__main">Our Team</span>
 
           <div className="name-card">
-            <h2>CALEB MCFADDEN</h2>
-            <h3>FOUNDER | MUSIC SUPERVISOR</h3>
+            <div>
+              <img src={CalebPicture}/>
+            </div>
+            <div>
+              <h2>CALEB MCFADDEN</h2>
+              <h3>FOUNDER | MUSIC SUPERVISOR</h3>
+            </div>
           </div>
 
           <p className="heading-sec__sub">
-            Vessel is a music supervision company specializing in sync licensing for film marketing, advertising content, TV programming, video games, podcasts, and feature films. We facilitate the music vision for media creatives and companies of all sizes by curating music that amplifies their stories accurately and punctually.
-          </p>
-          <hr className="secondary"/>
-          <p className="heading-sec__sub">
-            <strong>
-              So, what's a music supervisor?
-            </strong>
+            Caleb McFadden is a music supervisor and sync licensing creative in Portland, OR. He carries a wealth of music industry knowledge from over a decade of experience in music licensing, live performance, artist relations, creative development, music marketing, venue operations, talent booking, and artist management.
           </p>
           <br/>
           <p className="heading-sec__sub">
-            A <a href="https://www.guildofmusicsupervisors.com/what-is-a-music-supervisor">music supervisor</a> is the head of the music department that oversees all aspects of music on a project / production.  They collaborate with key decision-makers to help determine the musical vision within the budget.
-          </p>
-          <hr className="secondary"/>
-          <p className="heading-sec__sub">
-            <strong>
-              Why should I hire a music supervisor?
-            </strong>
+            Before starting Vessel, Caleb cut his teeth as the music coordinator at Clearly Music Services, working alongside fellow music supervisor and mentor, Jonathan Lane. Though he considers marketing and advertising content for Film & TV as his real bread & butter, Caleb’s experience at Clearly refined his music supervision skills within all forms of media, and he pushes himself to ensure that every new project turns out better than the last.
           </p>
           <br/>
           <p className="heading-sec__sub">
-            You hire a music supervisor to ensure that the project’s deliverables are accurate and accounted for as well as creative vision intact sonically within budget. In return, this saves the project money and time.
-          </p>
-          <br/>
-          <p className="heading-sec__sub">
-            Having spent well over a decade pursuing a variety of independent ventures, I've cultivated a diverse & exceedingly valuable perspective on technical project management. This perspective allows me to operate with technical & conceptual confidence in the production of audio, film, visual art, and software solutions. In addition to raw technical skills, my time in creative entrepreneurship has lent me a unique awareness of how human & digital systems successfully work together.
-          </p>
-          <br/>
-          <p className="heading-sec__sub">
-            Over the winter of 2022-2023, I attended <a href="https://flatironschool.com/" target="_blank">Flatiron School</a>'s Software Engineering Program on their Denver campus. During this program, my classNamemates came to know me as someone who is both friendly and knowledgeable, even electing me as <strong>Most Likely to Help Anyone Anytime</strong> with the course material. The most prominent example of this was my frequent planning of coding walkthroughs & other group learning sessions, which both reinforced my own learning <strong>and</strong> bolstered my ability to communicate software engineering concepts. Having graduated from this program in February of 2023, I look forward to contributing my technical and interpersonal skills to the ever-evolving field of software development!
-          </p>
-          <hr className="secondary"/>
-          <p className="heading-sec__sub">
-            <em>If you're interested in hiring me, collaborating, inquiring about my areas of expertise, or simply getting to know me better, don't hesitate to reach out. I'm always happy to connect with someone new!</em>
+            Within his web of networks, Caleb is recognized for his entrepreneurial spirit, a passion for empowering his community, a genuine curiosity in all things creative, and his resilient faith in the transformative power of music for individuals, businesses, and the community at large.
           </p>
           <a href="#contact" id="get-in-touch-btn" className="btn btn--med btn--theme btn--center dynamicBgClr">Get in Touch!</a>
         </h2>
