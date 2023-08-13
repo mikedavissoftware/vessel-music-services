@@ -11,7 +11,7 @@ export default function OurTeamSection() {
         <h2 className="heading heading-sec heading-sec__mb-med">
           <span className="heading-sec__main">Our Team</span>
 
-          <div className="name-card">
+          <div className="heading-sec__sub name-card">
             <div>
               <img src={CalebPicture}/>
             </div>
@@ -21,8 +21,10 @@ export default function OurTeamSection() {
             </div>
           </div>
 
+          <hr className="secondary"/>
+
           <p className="heading-sec__sub">
-            Caleb McFadden is a music supervisor and sync licensing creative in Portland, OR. He carries a wealth of music industry knowledge from over a decade of experience in music licensing, live performance, artist relations, creative development, music marketing, venue operations, talent booking, and artist management.
+            <strong>Caleb McFadden</strong> is a music supervisor and sync licensing creative in Portland, OR. He carries a wealth of music industry knowledge from over a decade of experience in music licensing, live performance, artist relations, creative development, music marketing, venue operations, talent booking, and artist management.
           </p>
           <br/>
           <p className="heading-sec__sub">
@@ -32,6 +34,9 @@ export default function OurTeamSection() {
           <p className="heading-sec__sub">
             Within his web of networks, Caleb is recognized for his entrepreneurial spirit, a passion for empowering his community, a genuine curiosity in all things creative, and his resilient faith in the transformative power of music for individuals, businesses, and the community at large.
           </p>
+
+          <hr className="secondary"/>
+
           <a href="#contact" id="get-in-touch-btn" className="btn btn--med btn--theme btn--center dynamicBgClr">Get in Touch!</a>
         </h2>
       </div>

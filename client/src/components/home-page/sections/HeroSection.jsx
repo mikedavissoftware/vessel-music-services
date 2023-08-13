@@ -1,4 +1,3 @@
-
 import InstagramLogoWhite from "../../../assets/png/white/insta-ico-white.png"
 import FacebookLogoWhite from "../../../assets/png/white/fb-ico-white.png"
 import LinktreeLogoWhite from "../../../assets/png/white/lt-ico-white.png"
@@ -10,7 +9,7 @@ export default function HeroSection() {
 
 
   return (
-    <section id="home-hero" className="home-hero">
+    <section id="home" className="home-hero">
       <div className="home-hero__content">
         <h1 className="heading-primary">Welcome to Vessel</h1>
         {/* <h1 className="heading-perm">Sync Or Swim, Bitch</h1> */}

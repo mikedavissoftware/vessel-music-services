@@ -163,14 +163,11 @@ hr.secondary {
 .panel {
   padding: 0 18px;
   display: none;
-  // background-color: #eee;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-style: solid;
   border-width: 3px;
   border-color: #dddddd;
-  // background-color: white;
-  // overflow: hidden;
   margin-bottom: 1rem;
   -webkit-animation: fadeIn 0.5s;
 }
@@ -183,28 +180,24 @@ hr.secondary {
 }
 
 .name-card {
-  // margin: 9rem;
-  // display: flex;
-  display: grid;
-  // padding: 2rem 5rem;
-  grid-template-columns: 40% auto;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  // padding: 1rem 5rem;
   @include respond(tab-port) {
-    margin: 2rem;
-    display: grid;
-    padding: 0 2rem;
-    // grid-template-columns: 16rem auto 38rem;
+    display: block;
+    text-align: center;
   }
   @include respond(phone) {
-    display: grid;
-    // grid-template-columns: 16rem auto 4rem;
+    display: block;
   }
 }
 
 .name-card > div > img {
-  width: 100%;
+  width: 30rem;
+  margin-right: 3rem;
   border-radius: 400px;
+  filter: drop-shadow(5px 5px 20px rgb(0, 0, 0, 0.2));
+  @include respond(tab-port) {
+    margin: 2rem 0;
+  }
 }

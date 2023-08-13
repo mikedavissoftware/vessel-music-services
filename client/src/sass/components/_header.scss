@@ -173,3 +173,8 @@
     border-bottom: 0;
   }
 }
+
+.d-none {
+  opacity: 0;
+  transition: .4s;
+}

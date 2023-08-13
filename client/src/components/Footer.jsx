@@ -1,7 +1,7 @@
-
-import LinkedInLogoWhite from "../assets/png/white/linkedin-ico-white.png"
-import GithubLogoWhite from "../assets/png/white/github-ico-white.png"
-import YouTubeLogoWhite from "../assets/png/white/yt-ico-white.png"
+import InstagramLogoWhite from "../assets/png/white/insta-ico-white.png"
+import FacebookLogoWhite from "../assets/png/white/fb-ico-white.png"
+import LinktreeLogoWhite from "../assets/png/white/lt-ico-white.png"
+import EmailLogoWhite from "../assets/png/white/email-ico-white.png"
 
 
 export default function Footer() {
@@ -13,29 +13,37 @@ export default function Footer() {
       <div className="main-container">
         <div className="main-footer__upper">
           <div className="main-footer__row main-footer__row-2">
-            <h4 className="heading heading-sm text-lt">Mike Davis</h4>
+            <h4 className="heading heading-sm text-lt">Vessel</h4>
             <p className="main-footer__short-desc">
-              Software Engineer<br/>Multimedia Producer<br/>Creative Entrepreneur<br/>Professional Musician
+              Music Supervision Services
             </p>
+
             <div className="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mikedavissoftware">
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/vessel.sound/">
                 <img
                   className="main-footer__icon"
-                  src={LinkedInLogoWhite}
+                  src={InstagramLogoWhite}
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/mikedavissoftware">
+              <a target="_blank" rel="noreferrer" href="https://www.facebook.com/vesselsoundx/">
                 <img
                   className="main-footer__icon"
-                  src={GithubLogoWhite}
+                  src={FacebookLogoWhite}
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCYzUffLPbfIJnjQgKIegclA">
+              <a target="_blank" rel="noreferrer" href="https://linktr.ee/vesselsound/">
                 <img
                   className="main-footer__icon"
-                  src={YouTubeLogoWhite}
+                  src={LinktreeLogoWhite}
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="mailto:caleb@vesselsound.com">
+                <img
+                  className="main-footer__icon"
+                  src={EmailLogoWhite}
                   alt="icon"
                 />
               </a>

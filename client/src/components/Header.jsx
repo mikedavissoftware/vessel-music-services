@@ -1,9 +1,12 @@
 import { useState } from "react"
 
 import ProfilePicture from "../assets/jpeg/vessel sound logo v3 blue wave.jpg"
-import LinkedInLogoBlack from "../assets/png/black/linkedin-ico-black.png"
-import GithubLogoBlack from "../assets/png/black/github-ico-black.png"
-import YouTubeLogoBlack from "../assets/png/black/yt-ico-black.png"
+
+import InstagramLogoBlack from "../assets/png/black/insta-ico-black.png"
+import FacebookLogoBlack from "../assets/png/black/fb-ico-black.png"
+import LinktreeLogoBlack from "../assets/png/black/lt-ico-black.png"
+import EmailLogoBlack from "../assets/png/black/email-ico-black.png"
+
 import HamMenu from "../assets/svg/ham-menu.svg"
 import HamMenuClose from "../assets/svg/ham-menu-close.svg"
 
@@ -16,35 +19,43 @@ export default function Header() {
       <div className="header__content">
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
-            <img
-              src={ProfilePicture}
-              alt="Mike Davis Profile Picture"
-              className="header__logo-img"
-            />
+            <a href="/">
+              <img
+                src={ProfilePicture}
+                alt="Mike Davis Profile Picture"
+                className="header__logo-img"
+              />
+            </a>
           </div>
-          
-          <span className="header__logo-sub">Vessel Music Services</span>
+          <a href="/" className="header__logo-sub">Vessel Music Services</a>
         </div>
 
         <div className="header__social-cont">
-          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mikedavissoftware">
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/vessel.sound/">
             <img
               className="main-footer__icon"
-              src={LinkedInLogoBlack}
+              src={InstagramLogoBlack}
               alt="icon"
             />
           </a>
-          <a target="_blank" rel="noreferrer" href="https://github.com/mikedavissoftware">
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/vesselsoundx/">
             <img
               className="main-footer__icon"
-              src={GithubLogoBlack}
+              src={FacebookLogoBlack}
               alt="icon"
             />
           </a>
-          <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCYzUffLPbfIJnjQgKIegclA">
+          <a target="_blank" rel="noreferrer" href="https://linktr.ee/vesselsound/">
             <img
               className="main-footer__icon"
-              src={YouTubeLogoBlack}
+              src={LinktreeLogoBlack}
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="mailto:caleb@vesselsound.com">
+            <img
+              className="main-footer__icon"
+              src={EmailLogoBlack}
               alt="icon"
             />
           </a>
@@ -53,10 +64,13 @@ export default function Header() {
         <div className="header__main">
           <ul className="header__links">
             <li className="header__link-wrapper">
-              <a href="./#home-hero" className="header__link"> Home </a>
+              <a href="./#home" className="header__link"> Home </a>
             </li>
             <li className="header__link-wrapper">
               <a href="./#about" className="header__link"> About </a>
+            </li>
+            <li className="header__link-wrapper">
+              <a href="./#team" className="header__link"> Team </a>
             </li>
             <li className="header__link-wrapper">
               <a href="./#projects" className="header__link"> Projects </a>
@@ -87,11 +101,15 @@ export default function Header() {
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
             <li className="header__sm-menu-link">
-              <a href="./#home-hero" onClick={() => setActive(false)}> Home </a>
+              <a href="./#home" onClick={() => setActive(false)}> Home </a>
             </li>
 
             <li className="header__sm-menu-link">
               <a href="./#about" onClick={() => setActive(false)}> About </a>
+            </li>
+
+            <li className="header__sm-menu-link">
+              <a href="./#team" onClick={() => setActive(false)}> Team </a>
             </li>
 
             <li className="header__sm-menu-link">
