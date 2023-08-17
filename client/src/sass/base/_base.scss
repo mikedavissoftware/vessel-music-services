@@ -91,6 +91,10 @@ hr.primary {
   border-width: 3px;
   border-radius: 3px;
   border-color: $themeClrPrimary;
+
+  @include respond(tab-port) {
+    width: 7.5%;
+  }
 }
 
 hr.secondary {
@@ -105,6 +109,10 @@ hr.secondary {
   border-width: 1px;
   border-radius: 3px;
   border-color: $themeClrPrimary;
+
+  @include respond(tab-port) {
+    width: 7.5%;
+  }
 }
 
 @-webkit-keyframes fadeIn {

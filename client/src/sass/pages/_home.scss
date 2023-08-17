@@ -257,19 +257,32 @@
 
 .projects {
   background: rgb(245, 245, 245);
+
+  &-category {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+  }
+
   &__row {
     display: grid;
+    background-color: #b9d8f9;
+    border-radius: 2rem;
     grid-template-columns: 1fr 2fr;
     grid-gap: 5rem;
-    margin-bottom: 11rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
 
     @include respond(tab-port) {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      margin-bottom: 8rem;
-    }
-
-    @include respond(tab-port) {
+      margin-bottom: 2rem;
       text-align: center;
     }
 
@@ -284,6 +297,7 @@
       width: 100%;
       display: block;
       object-fit: cover;
+      border-radius: 1.5rem;
     }
     &-content {
       padding: 2rem 0;
@@ -296,21 +310,21 @@
         align-items: center;
       }
 
-      &-category {
-        display: block;
+      &-title {
         font-weight: 700;
-        font-size: 4rem;
-        margin-bottom: 2rem;
+        font-size: 2.8rem;
+        // margin-bottom: 2rem;
         @include respond(phone) {
           font-size: 2.4rem;
         }
       }
-      &-title {
-        font-weight: 700;
-        font-size: 2.8rem;
+      &-subtitle {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 2rem;
         margin-bottom: 2rem;
         @include respond(phone) {
-          font-size: 2.4rem;
+          font-size: 1.6rem;
         }
       }
       &-desc {

@@ -18,6 +18,8 @@ import TheRetirementPlanCard from "./individual-projects/TheRetirementPlanCard"
 import TheRookieFedsCard from "./individual-projects/TheRookieFedsCard"
 import TillCard from "./individual-projects/TillCard"
 
+import ProjectCard from "./individual-projects/BehindTheMusicCard"
+
 export default function ProjectsSection() {
 
   // fetch(`https://sheets.googleapis.com/v4/spreadsheets/<sheet_id>/values/<worksheet_name>/?key=${}<api_key>`)
@@ -33,27 +35,51 @@ export default function ProjectsSection() {
             Below is a selection of a my work within the music supervision industry.
           </span> */}
         </h2>
-
+        
+        <h3 class="projects-category">TELEVISION</h3>
         <div class="projects__content">
-          <AccusedCard />
           <BehindTheMusicCard />
-          <BlackberryCard />
-          <BonesAndAllCard />
-          <BoschLegacyCard />
-          <CreedIIICard />
-          <EltonJohnCard />
+        </div>
+        <hr class="secondary"/>
+
+        <h3 class="projects-category">TRAILERS</h3>
+        <div class="projects__content">
+          <TheRetirementPlanCard />
           <MaggieMooresCard />
+          <BoschLegacyCard />
+          <AccusedCard />
           <MendingTheLineCard />
+          <SweetwaterCard />
+          <h2>Missing Measure of Revenge poster</h2>
           <NowYouSeeMeCard />
           <NowYouSeeMeIICard />
-          <PeoplePuzzlerCard />
           <PromPactCard />
-          <SweetwaterCard />
+          <BlackberryCard />
+        </div>
+        <hr class="secondary"/>
+
+        <h3 class="projects-category">FILM & TV MARKETING</h3>
+        <div class="projects__content">
+          <CreedIIICard />
+          <TillCard />
+          <h2>Missing Women Talking poster</h2>
+          <BonesAndAllCard />
           <TheCovenantCard />
           <TheExpendablesCard />
-          <TheRetirementPlanCard />
+          <PeoplePuzzlerCard />
           <TheRookieFedsCard />
-          <TillCard />
+        </div>
+        <hr class="secondary"/>
+
+        <h3 class="projects-category">ADVERTISING</h3>
+        <div class="projects__content">
+          <h2>Missing Hennessy poster</h2>
+        </div>
+        <hr class="secondary"/>
+
+        <h3 class="projects-category">LIVE</h3>
+        <div class="projects__content">
+          <EltonJohnCard />
         </div>
       </div>
     </section>
