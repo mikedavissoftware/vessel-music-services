@@ -27,7 +27,7 @@ export default function ProjectsSection() {
 
   // fetch(`https://sheets.googleapis.com/v4/spreadsheets/<sheet_id>/values/<worksheet_name>/?key=${}<api_key>`)
 
-  console.log(import.meta.env.VITE_API_KEY)
+  console.log(import.meta.env.development.VITE_API_KEY)
 
   return (
     <section id="projects" class="projects sec-pad">
