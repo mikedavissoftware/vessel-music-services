@@ -1,33 +1,28 @@
-import DaggettControlCard from "./individual-projects/DaggettControlCard"
-import SpiritualDirectionCard from "./individual-projects/SpiritualDirectionCard"
-import BackyardBowlsCard from "./individual-projects/BackyardBowlsCard"
-
-import Accused from "../../../../assets/projects/accused.jpg"
-import BehindTheMusic from "../../../../assets/projects/behind-the-music.jpg"
-import Blackberry from "../../../../assets/projects/blackberry.jpg"
-import BonesAndAll from "../../../../assets/projects/bones-and-all.jpg"
-import BoschLegacy from "../../../../assets/projects/bosch-legacy.jpg"
-import CreedIII from "../../../../assets/projects/creed-3.jpg"
-import EltonJohn from "../../../../assets/projects/elton-john.jpg"
-import MaggieMoores from "../../../../assets/projects/maggie-moore~s~.jpg"
-import MendingTheLine from "../../../../assets/projects/mending-the-line.jpg"
-import NowYouSeeMe from "../../../../assets/projects/now-you-see-me.jpg"
-import NowYouSeeMeII from "../../../../assets/projects/now-you-see-me-2.jpg"
-import PeoplePuzzler from "../../../../assets/projects/people-puzzler.jpg"
-import PromPact from "../../../../assets/projects/prom-pact.jpg"
-import Sweetwater from "../../../../assets/projects/sweetwater.jpg"
-import TheCovenant from "../../../../assets/projects/the-covenant.jpg"
-import TheExpendables from "../../../../assets/projects/the-expendables-edit.jpg"
-import TheRetirementPlan from "../../../../assets/projects/the-retirement-plan.jpg"
-import TheRookieFeds from "../../../../assets/projects/the-rookie-feds.jpg"
-import Till from "../../../../assets/projects/till.jpg"
-
+import AccusedCard from "./individual-projects/AccusedCard"
+import BehindTheMusicCard from "./individual-projects/BehindTheMusicCard"
+import BlackberryCard from "./individual-projects/BlackberryCard"
+import BonesAndAllCard from "./individual-projects/BonesAndAllCard"
+import BoschLegacyCard from "./individual-projects/BoschLegacyCard"
+import CreedIIICard from "./individual-projects/CreedIIICard"
+import EltonJohnCard from "./individual-projects/EltonJohnCard"
+import MaggieMooresCard from "./individual-projects/MaggieMooresCard"
+import MendingTheLineCard from "./individual-projects/MendingTheLineCard"
+import NowYouSeeMeCard from "./individual-projects/NowYouSeeMeCard"
+import NowYouSeeMeIICard from "./individual-projects/NowYouSeeMeIICard"
+import PeoplePuzzlerCard from "./individual-projects/PeoplePuzzlerCard"
+import PromPactCard from "./individual-projects/PromPactCard"
+import SweetwaterCard from "./individual-projects/SweetwaterCard"
+import TheCovenantCard from "./individual-projects/TheCovenantCard"
+import TheExpendablesCard from "./individual-projects/TheExpendablesCard"
+import TheRetirementPlanCard from "./individual-projects/TheRetirementPlanCard"
+import TheRookieFedsCard from "./individual-projects/TheRookieFedsCard"
+import TillCard from "./individual-projects/TillCard"
 
 export default function ProjectsSection() {
 
   // fetch(`https://sheets.googleapis.com/v4/spreadsheets/<sheet_id>/values/<worksheet_name>/?key=${}<api_key>`)
 
-  console.log(import.meta.env.development.VITE_API_KEY)
+  // console.log(import.meta.env.development.VITE_API_KEY)
 
   return (
     <section id="projects" class="projects sec-pad">
@@ -40,9 +35,25 @@ export default function ProjectsSection() {
         </h2>
 
         <div class="projects__content">
-          <DaggettControlCard />
-          <SpiritualDirectionCard />
-          <BackyardBowlsCard />
+          <AccusedCard />
+          <BehindTheMusicCard />
+          <BlackberryCard />
+          <BonesAndAllCard />
+          <BoschLegacyCard />
+          <CreedIIICard />
+          <EltonJohnCard />
+          <MaggieMooresCard />
+          <MendingTheLineCard />
+          <NowYouSeeMeCard />
+          <NowYouSeeMeIICard />
+          <PeoplePuzzlerCard />
+          <PromPactCard />
+          <SweetwaterCard />
+          <TheCovenantCard />
+          <TheExpendablesCard />
+          <TheRetirementPlanCard />
+          <TheRookieFedsCard />
+          <TillCard />
         </div>
       </div>
     </section>

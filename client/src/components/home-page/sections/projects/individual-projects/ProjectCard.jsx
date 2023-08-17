@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-import MockupImage from "../../../../assets/png/project-mockup-masked/project-mockup-masked.png"
+import ProjectImage from "../../../../../assets/projects/accused.jpg"
 
 
 export default function ProjectCard() {
@@ -11,7 +11,7 @@ export default function ProjectCard() {
     <div class="projects__row">
       <div class="projects__row-img-cont">
         <img
-          src={MockupImage}
+          src={ProjectImage}
           alt="Software Screenshot"
           class="projects__row-img"
           loading="lazy"

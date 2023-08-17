@@ -34,7 +34,7 @@ export default function HeroSection() {
           </a>
         </div>
         <div className="home-hero__social">
-          <a href="https://www.facebook.com/vesselsoundx/" className="home-hero__social-icon-link" target="_blank">
+          <a href="https://www.facebook.com/vesselmusicservices/" className="home-hero__social-icon-link" target="_blank">
             <img
               src={FacebookLogoWhite}
               alt="icon"

@@ -26,7 +26,7 @@ export default function Footer() {
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://www.facebook.com/vesselsoundx/">
+              <a target="_blank" rel="noreferrer" href="https://www.facebook.com/vesselmusicservices/">
                 <img
                   className="main-footer__icon"
                   src={FacebookLogoWhite}
