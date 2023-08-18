@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/accused.jpg"
+import ProjectImage from "../../../../../assets/projects/the-expendables-edit.jpg"
 
 export default function TheExpendablesCard() {
 
   const projectInfo = {
-    title: "Asdf",
-    subTitle: "asdf",
+    title: "MovieSphere",
+    subTitle: "The Expendables Movie Marathon",
     description: "",
     url: ""
   }

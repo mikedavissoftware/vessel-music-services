@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/accused.jpg"
+import ProjectImage from "../../../../../assets/projects/elton-john.jpg"
 
 export default function EltonJohnCard() {
 
   const projectInfo = {
-    title: "Asdf",
-    subTitle: "asdf",
+    title: "Saks Fifth Avenue Holiday Light Show 2022 (featuring Elton John)",
+    subTitle: "Live Outdoor Performance, Social Media / Live Streaming, Promotional Content",
     description: "",
     url: ""
   }

@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/accused.jpg"
+import ProjectImage from "../../../../../assets/projects/the-covenant.jpg"
 
 export default function TheCovenantCard() {
 
   const projectInfo = {
-    title: "Asdf",
-    subTitle: "asdf",
+    title: "The Covenant",
+    subTitle: "Various Featurettes",
     description: "",
     url: ""
   }

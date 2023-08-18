@@ -27,10 +27,9 @@ export default function ContactSection() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(formData),
-    }).then((r) => {
-      setSuccess(true)
-      console.log(r)
-    });
+    })
+    setSuccess(true)
+    setFormData(newForm)
   }
 
   return (

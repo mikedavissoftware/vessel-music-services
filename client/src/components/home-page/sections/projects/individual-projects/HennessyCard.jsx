@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/bones-and-all.jpg"
+import ProjectImage from "../../../../../assets/projects/hennessy-creed.jpg"
 
-export default function BonesAndAllCard() {
+export default function HennessyCard() {
 
   const projectInfo = {
-    title: "Bones And All",
-    subTitle: 'Featurettes: “London Film Festival” / “Venice Film Festival” / “AFI Film Festival” / “New York Film Festival”',
+    title: "Hennessy",
+    subTitle: "“Creed III x Hennessy Co-Branded Context”",
     description: "",
-    url: ""
+    url: "https://www.instagram.com/reel/CpOcdiQpa_7/?igshid=MTc4MmM1YmI2Ng%3D%3D"
   }
 
   return (

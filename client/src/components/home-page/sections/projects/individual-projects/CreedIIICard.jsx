@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/accused.jpg"
+import ProjectImage from "../../../../../assets/projects/creed-3.jpg"
 
 export default function CreedIIICard() {
 
   const projectInfo = {
     title: "Creed III",
-    subTitle: '“Campeones” / “A Woman’s Creed” / “Signs of a Fighter”',
-    description: "asdf",
+    subTitle: 'Featurettes: “Campeones” / “A Woman’s Creed” / “Signs of a Fighter”',
+    description: "",
     url1: "",
     url2: "",
     url3: ""

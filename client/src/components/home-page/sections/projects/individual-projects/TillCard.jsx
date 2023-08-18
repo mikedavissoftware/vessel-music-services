@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/accused.jpg"
+import ProjectImage from "../../../../../assets/projects/till.jpg"
 
 export default function TillCard() {
 
   const projectInfo = {
-    title: "Asdf",
-    subTitle: "asdf",
+    title: "Till",
+    subTitle: 'Featurettes:  “A Mother’s Power” / “A Matriarchy Explored” / “The Power of Image” / “Till: NAACP”',
     description: "",
     url: ""
   }

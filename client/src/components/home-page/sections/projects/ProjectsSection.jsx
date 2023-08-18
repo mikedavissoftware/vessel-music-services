@@ -5,6 +5,7 @@ import BonesAndAllCard from "./individual-projects/BonesAndAllCard"
 import BoschLegacyCard from "./individual-projects/BoschLegacyCard"
 import CreedIIICard from "./individual-projects/CreedIIICard"
 import EltonJohnCard from "./individual-projects/EltonJohnCard"
+import HennessyCard from "./individual-projects/HennessyCard"
 import MaggieMooresCard from "./individual-projects/MaggieMooresCard"
 import MendingTheLineCard from "./individual-projects/MendingTheLineCard"
 import NowYouSeeMeCard from "./individual-projects/NowYouSeeMeCard"
@@ -17,6 +18,7 @@ import TheExpendablesCard from "./individual-projects/TheExpendablesCard"
 import TheRetirementPlanCard from "./individual-projects/TheRetirementPlanCard"
 import TheRookieFedsCard from "./individual-projects/TheRookieFedsCard"
 import TillCard from "./individual-projects/TillCard"
+import WomenTalkingCard from "./individual-projects/WomenTalkingCard"
 
 import ProjectCard from "./individual-projects/BehindTheMusicCard"
 
@@ -30,7 +32,7 @@ export default function ProjectsSection() {
     <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__main">Featured Works</span>
           {/* <span class="heading-sec__sub">
             Below is a selection of a my work within the music supervision industry.
           </span> */}
@@ -50,7 +52,6 @@ export default function ProjectsSection() {
           <AccusedCard />
           <MendingTheLineCard />
           <SweetwaterCard />
-          <h2>Missing Measure of Revenge poster</h2>
           <NowYouSeeMeCard />
           <NowYouSeeMeIICard />
           <PromPactCard />
@@ -62,7 +63,7 @@ export default function ProjectsSection() {
         <div class="projects__content">
           <CreedIIICard />
           <TillCard />
-          <h2>Missing Women Talking poster</h2>
+          <WomenTalkingCard />
           <BonesAndAllCard />
           <TheCovenantCard />
           <TheExpendablesCard />
@@ -73,7 +74,7 @@ export default function ProjectsSection() {
 
         <h3 class="projects-category">ADVERTISING</h3>
         <div class="projects__content">
-          <h2>Missing Hennessy poster</h2>
+          <HennessyCard />
         </div>
         <hr class="secondary"/>
 

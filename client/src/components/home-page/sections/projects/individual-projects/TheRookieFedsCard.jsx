@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/accused.jpg"
+import ProjectImage from "../../../../../assets/projects/the-rookie-feds.jpg"
 
 export default function TheRookieFedsCard() {
 
   const projectInfo = {
-    title: "Asdf",
-    subTitle: "asdf",
+    title: "The Rookie Feds",
+    subTitle: "B2B Sizzle Reel",
     description: "",
     url: ""
   }

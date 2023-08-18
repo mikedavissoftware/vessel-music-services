@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/bones-and-all.jpg"
+import ProjectImage from "../../../../../assets/projects/women-talking.jpg"
 
-export default function BonesAndAllCard() {
+export default function WomenTalkingCard() {
 
   const projectInfo = {
-    title: "Bones And All",
-    subTitle: 'Featurettes: “London Film Festival” / “Venice Film Festival” / “AFI Film Festival” / “New York Film Festival”',
+    title: "Women Talking",
+    subTitle: "Various Featurettes",
     description: "",
     url: ""
   }
