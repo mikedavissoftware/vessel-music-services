@@ -7,7 +7,7 @@ export default function PromPactCard() {
   const projectInfo = {
     title: "Prom Pact",
     subTitle: "Movie Trailer",
-    description: "asdf",
+    description: "",
     url: "https://www.youtube.com/watch?v=brX-L41RJdA"
   }
 
@@ -27,11 +27,15 @@ export default function PromPactCard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

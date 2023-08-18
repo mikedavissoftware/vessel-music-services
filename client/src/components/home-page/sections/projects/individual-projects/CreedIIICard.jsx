@@ -8,9 +8,7 @@ export default function CreedIIICard() {
     title: "Creed III",
     subTitle: 'Featurettes: “Campeones” / “A Woman’s Creed” / “Signs of a Fighter”',
     description: "",
-    url1: "",
-    url2: "",
-    url3: ""
+    url: ""
   }
 
   return (
@@ -29,11 +27,15 @@ export default function CreedIIICard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

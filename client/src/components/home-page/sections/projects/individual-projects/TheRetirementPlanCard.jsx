@@ -7,7 +7,7 @@ export default function TheRetirementPlanCard() {
   const projectInfo = {
     title: "The Retirement Plan",
     subTitle: "Movie Trailer",
-    description: "asdf",
+    description: "",
     url: "https://www.youtube.com/watch?v=i2Xc4qq-5Ww"
   }
 
@@ -27,11 +27,15 @@ export default function TheRetirementPlanCard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

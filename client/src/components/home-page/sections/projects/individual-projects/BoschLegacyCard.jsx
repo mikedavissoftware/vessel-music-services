@@ -7,7 +7,7 @@ export default function BoschLegacyCard() {
   const projectInfo = {
     title: "Bosch: Legacy",
     subTitle: "Season 2 Trailer",
-    description: "asdf",
+    description: "",
     url: "https://www.youtube.com/watch?v=8JZfaj4Xy2w"
   }
 
@@ -27,11 +27,15 @@ export default function BoschLegacyCard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

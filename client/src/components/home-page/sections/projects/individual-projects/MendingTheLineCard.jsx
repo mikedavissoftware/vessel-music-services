@@ -7,7 +7,7 @@ export default function MendingTheLineCard() {
   const projectInfo = {
     title: "Mending The Line",
     subTitle: "Movie Trailer",
-    description: "asdf",
+    description: "",
     url: "https://www.youtube.com/watch?v=tSkv_sEyPSc"
   }
 
@@ -27,11 +27,15 @@ export default function MendingTheLineCard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

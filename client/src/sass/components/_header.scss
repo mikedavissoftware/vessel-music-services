@@ -39,9 +39,11 @@
     cursor: pointer;
     color: #333;
     transition: color .3s;
+    -webkit-filter: drop-shadow(1px 2px 3px rgb(0,0,0,.4));
 
     &:hover {
       color: $themeClrPrimary;
+      -webkit-filter: drop-shadow(2px 3px 3px rgb(0,0,0,.6));
     }
   }
 

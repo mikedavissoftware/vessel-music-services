@@ -7,7 +7,7 @@ export default function SweetwaterCard() {
   const projectInfo = {
     title: "Sweetwater",
     subTitle: "Movie Trailer",
-    description: "asdf",
+    description: "",
     url: "https://www.youtube.com/watch?v=c9pITIfdLNo"
   }
 
@@ -27,11 +27,15 @@ export default function SweetwaterCard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

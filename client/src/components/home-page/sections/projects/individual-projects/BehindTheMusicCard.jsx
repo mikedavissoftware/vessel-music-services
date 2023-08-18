@@ -7,7 +7,7 @@ export default function BehindTheMusicCard() {
   const projectInfo = {
     title: "Behind the Music",
     subTitle: "Season 3: Episodes 1 - 8",
-    description: "Description",
+    description: "",
     url: "https://www.paramountplus.com/shows/behind-the-music/"
   }
 
@@ -27,11 +27,15 @@ export default function BehindTheMusicCard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

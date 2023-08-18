@@ -1,23 +1,11 @@
 .heading-primary {
-  font-size: 6rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: right;
-  @include respond(phone) {
-    font-size: 4rem;
-    
-  }
-}
-
-.heading-perm {
-  font-family: $permanent-marker;
-  font-size: 6rem;
+  font-family: $logo-font;
+  font-size: 16rem;
   // text-transform: uppercase;
   letter-spacing: 3px;
   text-align: right;
   @include respond(phone) {
-    font-size: 4rem;
-    
+    font-size: 10rem;
   }
 }
 
@@ -38,7 +26,7 @@
 
   &__main {
     display: block;
-    font-size: 4rem;
+    font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     letter-spacing: 3px;
@@ -150,7 +138,7 @@
 .sec-pad {
   padding: 9rem 0 6rem 0;
   @include respond(tab-port) {
-    padding: 9rem 0 1rem 0;
+    padding: 9rem 0 6rem 0;
   }
 }
 // .sec-pad-before {
@@ -168,13 +156,13 @@
 
 .text-primary {
   color: #fff;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: right;
   width: 100%;
   line-height: 1.6;
 
   @include respond(phone) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 

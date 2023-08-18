@@ -7,7 +7,7 @@ export default function NowYouSeeMeCard() {
   const projectInfo = {
     title: "Now You See Me",
     subTitle: "Movie Trailer Rework",
-    description: "asdf",
+    description: "",
     url: "https://www.youtube.com/watch?v=KzJNYYkkhzc"
   }
 
@@ -27,11 +27,15 @@ export default function NowYouSeeMeCard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

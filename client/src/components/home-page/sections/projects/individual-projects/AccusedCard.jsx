@@ -7,7 +7,7 @@ export default function AccusedCard() {
   const projectInfo = {
     title: "Accused",
     subTitle: "B2B Sizzle & Season 1 Trailer",
-    description: "asdf",
+    description: "",
     url: "https://www.youtube.com/watch?v=mM2risBg_ec"
   }
 
@@ -27,11 +27,15 @@ export default function AccusedCard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

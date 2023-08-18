@@ -11,11 +11,11 @@ export default function HeroSection() {
   return (
     <section id="home" className="home-hero">
       <div className="home-hero__content">
-        <h1 className="heading-primary">Welcome to Vessel</h1>
+        <h1 className="heading-primary">vessel</h1>
         {/* <h1 className="heading-perm">Sync Or Swim, Bitch</h1> */}
         <div className="home-hero__info">
           <p className="text-primary">
-            Delivering Music from Under the Surface
+            Music Supervision <br/> Music Clearance & Licensing <br/> Sync Consulting
           </p>
         </div>
         {/* <div className="home-hero__cta">

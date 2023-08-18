@@ -11,11 +11,11 @@ export default function Footer() {
   return (
     <footer className="main-footer">
       <div className="main-container">
-        <div className="main-footer__upper">
+        <div className="main-footer">
           <div className="main-footer__row main-footer__row-2">
-            <h4 className="heading heading-sm text-lt">Vessel</h4>
+            <h4 className="heading heading-sm text-lt main-footer-logo">vessel</h4>
             <p className="main-footer__short-desc">
-              Music Supervision Services
+              Music Supervision • Music Clearance & Licensing • Sync Consulting
             </p>
 
             <div className="main-footer__social-cont">
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
 
         <div className="main-footer__lower">
-          &copy; Copyright 2023.<br/>Adapted for React.js and Ruby on Rails from a template by
+          &copy; Copyright 2023 Vessel Music Services<br/>Adapted for React.js and Ruby on Rails from a 
           <a rel="noreferrer" target="_blank" href="https://github.com/rammcodes/Dopefolio">template</a> by <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
         </div>
       </div>

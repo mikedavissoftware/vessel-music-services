@@ -7,7 +7,7 @@ export default function MaggieMooresCard() {
   const projectInfo = {
     title: "Maggie Moore(s)",
     subTitle: "Movie Trailer",
-    description: "asdf",
+    description: "",
     url: "https://www.youtube.com/watch?v=W1WmbwpUk3M"
   }
 
@@ -27,11 +27,15 @@ export default function MaggieMooresCard() {
         <p class="projects__row-content-desc">
           {projectInfo.description}
         </p>
-        <Link 
-          to={projectInfo.url}
-          class="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >View Project</Link>
+        {(projectInfo.url) ? (
+          <Link 
+            to={projectInfo.url}
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >View Project</Link>
+        ) : (
+          null
+        )}
       </div>
     </div>
   )

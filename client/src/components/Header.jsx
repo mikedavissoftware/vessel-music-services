@@ -27,7 +27,7 @@ export default function Header() {
               />
             </a>
           </div>
-          <a href="/" className="header__logo-sub">Vessel Music Services</a>
+          {/* <a href="/" className="header__logo-sub">Vessel Music Services</a> */}
         </div>
 
         <div className="header__social-cont">
@@ -73,7 +73,7 @@ export default function Header() {
               <a href="./#team" className="header__link"> Team </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./#projects" className="header__link"> Projects </a>
+              <a href="./#projects" className="header__link"> Featured Works </a>
             </li>
             <li className="header__link-wrapper">
               <a href="./#contact" className="header__link"> Contact </a>
@@ -113,7 +113,7 @@ export default function Header() {
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./#projects" onClick={() => setActive(false)}> Projects </a>
+              <a href="./#projects" onClick={() => setActive(false)}> Featured Works </a>
             </li>
 
             <li className="header__sm-menu-link">
