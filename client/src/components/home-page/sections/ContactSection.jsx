@@ -21,13 +21,13 @@ export default function ContactSection() {
   function handleSubmit(e) {
     e.preventDefault()
     console.log(formData)
-    // fetch("https://public.herotofu.com/v1/fde317b0-3d15-11ee-b184-4bfb587b2c20", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify(formData),
-    // })
+    fetch("https://public.herotofu.com/v1/fde317b0-3d15-11ee-b184-4bfb587b2c20", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData),
+    })
     setSuccess(true)
     setFormData(newForm)
   }
