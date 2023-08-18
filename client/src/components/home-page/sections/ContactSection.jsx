@@ -21,13 +21,13 @@ export default function ContactSection() {
   function handleSubmit(e) {
     e.preventDefault()
     console.log(formData)
-    fetch("https://public.herotofu.com/v1/fde317b0-3d15-11ee-b184-4bfb587b2c20", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData),
-    })
+    // fetch("https://public.herotofu.com/v1/fde317b0-3d15-11ee-b184-4bfb587b2c20", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify(formData),
+    // })
     setSuccess(true)
     setFormData(newForm)
   }
@@ -91,8 +91,8 @@ export default function ContactSection() {
 
             {(success) ? (
               <>
-                <hr classNameName="secondary"/>
-                <p classNameName="heading-sec__sub">Contact form successfully delivered! We will be in touch. If you don't receive a response within a week, please reach out on <a href="" target="_blank">Instagram</a>!</p>
+                <hr className="secondary"/>
+                <p className="heading-sec__sub">Contact form successfully delivered! We will be in touch. If you don't receive a response within a week, please reach out on <a href="https://www.instagram.com/vessel.sound/" target="_blank">Instagram</a>!</p>
               </>
             ) : (
               null
