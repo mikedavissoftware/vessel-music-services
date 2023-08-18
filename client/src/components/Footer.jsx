@@ -52,8 +52,8 @@ export default function Footer() {
         </div>
 
         <div className="main-footer__lower">
-          &copy; Copyright 2023 Vessel Music Services<br/>Adapted for React.js and Ruby on Rails from a 
-          <a rel="noreferrer" target="_blank" href="https://github.com/rammcodes/Dopefolio">template</a> by <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+          &copy; Copyright 2023 Vessel Music Services<br/>Adapted for React.js by <a rel="noreferrer" target="_blank" href="https://mikedavissoftware.com">Mike Davis</a> from a 
+          <a rel="noreferrer" target="_blank" href="https://github.com/rammcodes/Dopefolio">template by Ram Maheshwari</a>
         </div>
       </div>
     </footer>
