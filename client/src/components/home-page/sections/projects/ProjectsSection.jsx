@@ -1,5 +1,6 @@
 import AccusedCard from "./individual-projects/AccusedCard"
 import BehindTheMusicCard from "./individual-projects/BehindTheMusicCard"
+import BehindTheMusicTile from "./individual-projects/BehindTheMusicTile"
 import BlackberryCard from "./individual-projects/BlackberryCard"
 import BonesAndAllCard from "./individual-projects/BonesAndAllCard"
 import BoschLegacyCard from "./individual-projects/BoschLegacyCard"
@@ -29,23 +30,29 @@ export default function ProjectsSection() {
   // console.log(import.meta.env.development.VITE_API_KEY)
 
   return (
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Featured Works</span>
-          {/* <span class="heading-sec__sub">
+    <section id="projects" className="projects sec-pad">
+      <div className="main-container">
+        <h2 className="heading heading-sec heading-sec__mb-bg">
+          <span className="heading-sec__main">Featured Works</span>
+          {/* <span className="heading-sec__sub">
             Below is a selection of a my work within the music supervision industry.
           </span> */}
         </h2>
         
-        <h3 class="projects-category">TELEVISION</h3>
-        <div class="projects__content">
+        <h3 className="projects-category">TELEVISION</h3>
+        <div className="projects__content">
           <BehindTheMusicCard />
         </div>
-        <hr class="secondary"/>
 
-        <h3 class="projects-category">TRAILERS</h3>
-        <div class="projects__content">
+        <div className="projects-tiles-cont">
+          <BehindTheMusicTile />
+          <BehindTheMusicTile />
+          <BehindTheMusicTile />
+        </div>
+        <hr className="secondary"/>
+
+        <h3 className="projects-category">TRAILERS</h3>
+        <div className="projects__content">
           <TheRetirementPlanCard />
           <MaggieMooresCard />
           <BoschLegacyCard />
@@ -57,10 +64,10 @@ export default function ProjectsSection() {
           <PromPactCard />
           <BlackberryCard />
         </div>
-        <hr class="secondary"/>
+        <hr className="secondary"/>
 
-        <h3 class="projects-category">FILM & TV MARKETING</h3>
-        <div class="projects__content">
+        <h3 className="projects-category">FILM & TV MARKETING</h3>
+        <div className="projects__content">
           <CreedIIICard />
           <TillCard />
           <WomenTalkingCard />
@@ -70,16 +77,16 @@ export default function ProjectsSection() {
           <PeoplePuzzlerCard />
           <TheRookieFedsCard />
         </div>
-        <hr class="secondary"/>
+        <hr className="secondary"/>
 
-        <h3 class="projects-category">ADVERTISING</h3>
-        <div class="projects__content">
+        <h3 className="projects-category">ADVERTISING</h3>
+        <div className="projects__content">
           <HennessyCard />
         </div>
-        <hr class="secondary"/>
+        <hr className="secondary"/>
 
-        <h3 class="projects-category">LIVE</h3>
-        <div class="projects__content">
+        <h3 className="projects-category">LIVE</h3>
+        <div className="projects__content">
           <EltonJohnCard />
         </div>
       </div>
