@@ -39,11 +39,15 @@ export default function ContactSection() {
         <h2 className="heading heading-sec heading-sec__mb-med">
           <span className="heading-sec__main heading-sec__main--lt">Contact</span>
           <span className="heading-sec__sub heading-sec__sub--lt">
+            We're always happy to connect with someone new! If you're interested in collaborating or simply getting to know us better, please send an email to <strong style={{textDecoration: "underline"}}><a href="mailto:caleb@vesselsound.com" target="_blank">caleb@vesselsound.com</a></strong>.
+          </span>
+        </h2>
+
+        {/* <h2 className="heading heading-sec heading-sec__mb-med">
+          <span className="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span className="heading-sec__sub heading-sec__sub--lt">
             We're always happy to connect with someone new! If you're interested in collaborating or simply getting to know us better, please use the contact form below.
           </span>
-          {/* <span className="heading-sec__sub heading-sec__sub--lt">
-            We're always happy to connect with someone new! If you're interested in collaborating or simply getting to know us better, please send an email to <strong style={{textDecoration: "underline"}}><a href="mailto:caleb@vesselsound.com" target="_blank">caleb@vesselsound.com</a></strong>.
-          </span> */}
         </h2>
 
         <div className="contact__form-container">
@@ -101,7 +105,7 @@ export default function ContactSection() {
               null
             )}
           </form>
-        </div>
+        </div> */}
 
       </div>
     </section>

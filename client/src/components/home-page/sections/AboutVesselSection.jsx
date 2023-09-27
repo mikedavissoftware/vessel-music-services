@@ -3,13 +3,19 @@
 
 export default function AboutVesselSection() {
 
-
+  fetch(`https://sheets.googleapis.com/v4/spreadsheets/1xEINcpCOSh1gvUiHjLd2X-2LBaN27yW8AIJnVkFdo6U/values/FeaturedWorks/?key=${(import.meta.env.MODE === "development") ? (import.meta.env.VITE_GOOGLE_API_KEY) : (process.env.GOOGLE_API_KEY)}`)
+  .then(r => r.json())
+  .then(data => {
+    console.log(data)
+  })
 
   return (
     <section id="about" className="about sec-pad">
       <div className="main-container">
         <h2 className="heading heading-sec heading-sec__mb-med">
           <span className="heading-sec__main">About</span>
+
+          <img src="https://drive.google.com/uc?export=view&id=18-Ky8ixe24x2WhzsKGOw4oJinMhFUz3k" />
 
           <p className="heading-sec__sub">
             <strong>Vessel is a music supervision company specializing in sync licensing for film marketing, advertising content, TV programming, video games, podcasts, films, and new media. We facilitate the music vision for media creatives and companies of all sizes by curating music that amplifies their stories both accurately and punctually.</strong>
