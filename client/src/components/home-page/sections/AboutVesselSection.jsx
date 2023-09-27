@@ -5,11 +5,9 @@ export default function AboutVesselSection() {
 
   console.log(import.meta.env.MODE)
 
-  const APIKey = process.env.GOOGLE_API_KEY
+  console.log(process.env.APIKey)
 
-  console.log(APIKey)
-
-  fetch(`https://sheets.googleapis.com/v4/spreadsheets/1xEINcpCOSh1gvUiHjLd2X-2LBaN27yW8AIJnVkFdo6U/values/FeaturedWorks/?key=${(import.meta.env.MODE === "development") ? (import.meta.env.VITE_GOOGLE_API_KEY) : (APIKey)}`)
+  fetch(`https://sheets.googleapis.com/v4/spreadsheets/1xEINcpCOSh1gvUiHjLd2X-2LBaN27yW8AIJnVkFdo6U/values/FeaturedWorks/?key=${(import.meta.env.MODE === "development") ? (import.meta.env.APIKey) : (process.env.APIKey)}`)
   .then(r => r.json())
   .then(data => {
     console.log(data)
