@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/the-retirement-plan.jpg"
+export default function ProjectCard({ project, keys }) {
 
-export default function TheRetirementPlanCard() {
+  const projectInfo = {}
 
-  const projectInfo = {
-    title: "The Retirement Plan",
-    subTitle: "Movie Trailer",
-    description: "",
-    url: "https://www.youtube.com/watch?v=i2Xc4qq-5Ww"
-  }
+  keys.forEach((key, index) => {
+    projectInfo[key] = project[index]
+  })
+
+  const imageUrl = `https://drive.google.com/uc?id=${projectInfo.image.slice(32, 65)}`
+  console.log(imageUrl)
 
   return (
     <div class="projects__row">
       <div class="projects__row-img-cont">
         <img
-          src={ProjectImage}
+          src={imageUrl}
           alt={`${projectInfo.title} Poster`}
           class="projects__row-img"
           loading="lazy"
@@ -24,10 +24,14 @@ export default function TheRetirementPlanCard() {
       <div class="projects__row-content">
         <h3 class="projects__row-content-title">{projectInfo.title}</h3>
         <h4 class="projects__row-content-subtitle">{projectInfo.subTitle}</h4>
-        <p class="projects__row-content-desc">
-          {projectInfo.description}
-        </p>
-        {(projectInfo.url) ? (
+        
+        {(projectInfo.description !== "NA") ? (
+          <p class="projects__row-content-desc">
+            {projectInfo.description}
+          </p>
+        ) : (null)}
+
+        {(projectInfo.url !== "NA") ? (
           <Link 
             to={projectInfo.url}
             class="btn btn--med btn--theme dynamicBgClr"

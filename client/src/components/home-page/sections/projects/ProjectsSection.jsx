@@ -1,33 +1,28 @@
-import AccusedCard from "./individual-projects/AccusedCard"
-import BehindTheMusicCard from "./individual-projects/BehindTheMusicCard"
-import BehindTheMusicTile from "./individual-projects/BehindTheMusicTile"
-import BlackberryCard from "./individual-projects/BlackberryCard"
-import BonesAndAllCard from "./individual-projects/BonesAndAllCard"
-import BoschLegacyCard from "./individual-projects/BoschLegacyCard"
-import CreedIIICard from "./individual-projects/CreedIIICard"
-import EltonJohnCard from "./individual-projects/EltonJohnCard"
-import HennessyCard from "./individual-projects/HennessyCard"
-import MaggieMooresCard from "./individual-projects/MaggieMooresCard"
-import MendingTheLineCard from "./individual-projects/MendingTheLineCard"
-import NowYouSeeMeCard from "./individual-projects/NowYouSeeMeCard"
-import NowYouSeeMeIICard from "./individual-projects/NowYouSeeMeIICard"
-import PeoplePuzzlerCard from "./individual-projects/PeoplePuzzlerCard"
-import PromPactCard from "./individual-projects/PromPactCard"
-import SweetwaterCard from "./individual-projects/SweetwaterCard"
-import TheCovenantCard from "./individual-projects/TheCovenantCard"
-import TheExpendablesCard from "./individual-projects/TheExpendablesCard"
-import TheRetirementPlanCard from "./individual-projects/TheRetirementPlanCard"
-import TheRookieFedsCard from "./individual-projects/TheRookieFedsCard"
-import TillCard from "./individual-projects/TillCard"
-import WomenTalkingCard from "./individual-projects/WomenTalkingCard"
+import { useState, useEffect } from "react"
 
-import ProjectCard from "./individual-projects/BehindTheMusicCard"
+import ProjectCard from "./ProjectCard"
+
 
 export default function ProjectsSection() {
 
-  // fetch(`https://sheets.googleapis.com/v4/spreadsheets/<sheet_id>/values/<worksheet_name>/?key=${}<api_key>`)
+  const [keys, setKeys] = useState([])
+  const [projects, setProjects] = useState([])
 
-  // console.log(import.meta.env.development.VITE_API_KEY)
+  useEffect(() => {
+    fetch(`https://sheets.googleapis.com/v4/spreadsheets/1xEINcpCOSh1gvUiHjLd2X-2LBaN27yW8AIJnVkFdo6U/values/FeaturedWorks/?key=${import.meta.env.VITE_GOOGLE_API_KEY}`)
+    .then(r => r.json())
+    .then(data => {
+      setKeys(data.values[0])
+      setProjects(data.values.slice(1))
+    })
+  }, [])
+
+  console.log(keys)
+  console.log(projects)
+
+  const projectComponents = projects.map((project) => {
+    return <ProjectCard project={project} keys={keys} />
+  })
 
   return (
     <section id="projects" className="projects sec-pad">
@@ -39,9 +34,9 @@ export default function ProjectsSection() {
           </span> */}
         </h2>
         
-        <h3 className="projects-category">TELEVISION</h3>
-        <div className="projects__content">
-          <BehindTheMusicCard />
+        <h3 class="projects-category">TELEVISION</h3>
+        <div class="projects__content">
+          {projectComponents}
         </div>
 
         <div className="projects-tiles-cont">
@@ -51,43 +46,27 @@ export default function ProjectsSection() {
         </div>
         <hr className="secondary"/>
 
-        <h3 className="projects-category">TRAILERS</h3>
-        <div className="projects__content">
-          <TheRetirementPlanCard />
-          <MaggieMooresCard />
-          <BoschLegacyCard />
-          <AccusedCard />
-          <MendingTheLineCard />
-          <SweetwaterCard />
-          <NowYouSeeMeCard />
-          <NowYouSeeMeIICard />
-          <PromPactCard />
-          <BlackberryCard />
+        <h3 class="projects-category">TRAILERS</h3>
+        <div class="projects__content">
+          {}
         </div>
         <hr className="secondary"/>
 
-        <h3 className="projects-category">FILM & TV MARKETING</h3>
-        <div className="projects__content">
-          <CreedIIICard />
-          <TillCard />
-          <WomenTalkingCard />
-          <BonesAndAllCard />
-          <TheCovenantCard />
-          <TheExpendablesCard />
-          <PeoplePuzzlerCard />
-          <TheRookieFedsCard />
+        <h3 class="projects-category">FILM & TV MARKETING</h3>
+        <div class="projects__content">
+          {}
         </div>
         <hr className="secondary"/>
 
-        <h3 className="projects-category">ADVERTISING</h3>
-        <div className="projects__content">
-          <HennessyCard />
+        <h3 class="projects-category">ADVERTISING</h3>
+        <div class="projects__content">
+          {}
         </div>
         <hr className="secondary"/>
 
-        <h3 className="projects-category">LIVE</h3>
-        <div className="projects__content">
-          <EltonJohnCard />
+        <h3 class="projects-category">LIVE</h3>
+        <div class="projects__content">
+          {}
         </div>
       </div>
     </section>

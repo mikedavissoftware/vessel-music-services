@@ -1,9 +1,7 @@
-
+import { useState, useEffect } from "react"
 
 
 export default function AboutVesselSection() {
-
-
 
   return (
     <section id="about" className="about sec-pad">

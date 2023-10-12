@@ -43,7 +43,14 @@ export default function ContactSection() {
           </span>
         </h2>
 
-        {/* <div className="contact__form-container">
+        {/* <h2 className="heading heading-sec heading-sec__mb-med">
+          <span className="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span className="heading-sec__sub heading-sec__sub--lt">
+            We're always happy to connect with someone new! If you're interested in collaborating or simply getting to know us better, please use the contact form below.
+          </span>
+        </h2>
+
+        <div className="contact__form-container">
           <form onSubmit={handleSubmit} className="contact__form">
             <div className="contact__form-field">
               <label className="contact__form-label" for="name">Name</label>
