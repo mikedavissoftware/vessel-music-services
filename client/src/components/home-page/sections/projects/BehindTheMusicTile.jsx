@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../../assets/projects/behind-the-music.jpg"
+import ProjectImage from "../../../../assets/projects/behind-the-music.jpg"
 
 export default function BehindTheMusicTile() {
   const [mouseOver, setMouseOver] = useState(false)

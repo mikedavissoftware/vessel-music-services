@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 
 import ProjectCard from "./ProjectCard"
+import BehindTheMusicTile from "./BehindTheMusicTile"
 
 
 export default function ProjectsSection() {
