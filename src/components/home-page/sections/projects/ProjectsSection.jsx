@@ -21,9 +21,26 @@ export default function ProjectsSection() {
   console.log(keys)
   console.log(projects)
 
-  const projectComponents = projects.map((project) => {
-    return <ProjectCard project={project} keys={keys} />
-  })
+  // const projectComponents = projects.map((project) => {
+  //   return <ProjectCard project={project} keys={keys} />
+  // })
+
+  function projectComponents(category) {
+    const categoryProjects = projects.filter((project) => {
+      return project[0] == category
+    })
+    const categoryProjectComponents = categoryProjects.map((project, index) => {
+      return <ProjectCard key={index + 1} project={project} keys={keys} />
+    })
+    return (
+      <div>
+        <h3 class="projects-category">{category.toUpperCase()}</h3>
+        <div class="projects__content">
+          {categoryProjectComponents}
+        </div>
+      </div>
+    )
+  }
 
   return (
     <section id="projects" className="projects sec-pad">
@@ -34,41 +51,24 @@ export default function ProjectsSection() {
             Below is a selection of a my work within the music supervision industry.
           </span> */}
         </h2>
-        
-        <h3 class="projects-category">TELEVISION</h3>
-        <div class="projects__content">
-          {projectComponents}
-        </div>
 
-        <div className="projects-tiles-cont">
+        {projectComponents("Television")}
+        <hr className="secondary"/>
+        {projectComponents("Trailers")}
+        <hr className="secondary"/>
+        {projectComponents("Film & TV Marketing")}
+        <hr className="secondary"/>
+        {projectComponents("Advertising")}
+        <hr className="secondary"/>
+        {projectComponents("Live")}
+
+        {/* <div className="projects-tiles-cont">
           <BehindTheMusicTile />
           <BehindTheMusicTile />
           <BehindTheMusicTile />
         </div>
-        <hr className="secondary"/>
+        <hr className="secondary"/> */}
 
-        <h3 class="projects-category">TRAILERS</h3>
-        <div class="projects__content">
-          {}
-        </div>
-        <hr className="secondary"/>
-
-        <h3 class="projects-category">FILM & TV MARKETING</h3>
-        <div class="projects__content">
-          {}
-        </div>
-        <hr className="secondary"/>
-
-        <h3 class="projects-category">ADVERTISING</h3>
-        <div class="projects__content">
-          {}
-        </div>
-        <hr className="secondary"/>
-
-        <h3 class="projects-category">LIVE</h3>
-        <div class="projects__content">
-          {}
-        </div>
       </div>
     </section>
   )
