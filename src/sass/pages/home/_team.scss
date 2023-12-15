@@ -1,0 +1,44 @@
+.team {
+  background: #e9e7de;
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 8rem;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      @include respond(phone) {
+        font-size: 2.4rem;
+      }
+    }
+    &-subtitle {
+      color: rgb(73, 73, 73);
+      font-weight: 700;
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
+    }
+    &-details-para {
+      font-size: 1.8rem;
+      color: grey;
+      max-width: 60rem;
+      line-height: 1.7;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      &--hl {
+        font-weight: 700;
+        margin: 0 3px;
+      }
+      &:last-child {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}

@@ -34,7 +34,7 @@ export default function ProjectsSection() {
     })
     return (
       <div>
-        <h3 class="projects-category">{category.toUpperCase()}</h3>
+        <h3 class="projects__category">{category.toUpperCase()}</h3>
         <div class="projects__content">
           {categoryProjectComponents}
         </div>
@@ -62,12 +62,12 @@ export default function ProjectsSection() {
         <hr className="secondary"/>
         {projectComponents("Live")}
 
-        {/* <div className="projects-tiles-cont">
+        <div className="projects__tiles-cont">
           <BehindTheMusicTile />
           <BehindTheMusicTile />
           <BehindTheMusicTile />
         </div>
-        <hr className="secondary"/> */}
+        <hr className="secondary"/>
 
       </div>
     </section>

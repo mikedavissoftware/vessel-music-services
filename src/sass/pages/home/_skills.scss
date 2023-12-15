@@ -1,0 +1,66 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(255, 255, 255);
+  &__content {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 8rem;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      @include respond(phone) {
+        font-size: 2.4rem;
+      }
+    }
+    &-subtitle {
+      color: rgb(75, 75, 75);
+      font-weight: 700;
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
+    }
+    &-details-para {
+      font-size: 1.8rem;
+      color: grey;
+      max-width: 60rem;
+      line-height: 1.7;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      &--hl {
+        font-weight: 700;
+        margin: 0 3px;
+      }
+      &:last-child {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  &__skill {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: #e8e8e8;
+    border-radius: $commonBorderRadius;
+    font-weight: 600;
+    color: #000000;
+  }
+  &__program {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: #626262;
+    border-radius: $commonBorderRadius;
+    font-weight: 600;
+    color: rgb(245, 245, 245);
+  }
+}

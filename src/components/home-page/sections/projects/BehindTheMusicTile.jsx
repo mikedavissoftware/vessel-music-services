@@ -14,35 +14,30 @@ export default function BehindTheMusicTile() {
   }
 
   return (
-    <div className="projects__tile">
-      <div className="projects__tile-img-cont">
+    <div 
+      className="projects__tile"
+      onMouseEnter={() => setMouseOver(true)}
+      onMouseLeave={() => setMouseOver(false)}
+    >
 
-        {(projectInfo.url) ? (
-          <Link 
-            to={projectInfo.url}
-            className=""
-            target="_blank"
-          >
-            <img
-              src={ProjectImage}
-              alt={`${projectInfo.title} Poster`}
-              className="projects__tile-img"
-              loading="lazy"
-            />
-          </Link>
-        ) : (
+      <div className="projects__tile-cont">
+        <Link 
+          to={projectInfo.url}
+          className="projects__tile-link"
+          target="_blank"
+        >
           <img
             src={ProjectImage}
             alt={`${projectInfo.title} Poster`}
-            className="projects__tile-img"
+            className={mouseOver ? ("projects__tile-img-bigger") : ("projects__tile-img")}
             loading="lazy"
           />
-        )}
+        </Link>
 
-        <div className="projects__tile-img-content">
-          <h3 className="projects__tile-img-content-title">{projectInfo.title}</h3>
-          <h4 className="projects__tile-img-content-subtitle">{projectInfo.subTitle}</h4>
-          <p className="projects__tile-img-content-desc">
+        <div className={mouseOver ? ("projects__tile-content") : ("projects__tile-content d-none")}>
+          <h3 className="projects__tile-content-title">{projectInfo.title}</h3>
+          <h4 className="projects__tile-content-subtitle">{projectInfo.subTitle}</h4>
+          <p className="projects__tile-content-desc">
             {projectInfo.description}
           </p>
         </div>
