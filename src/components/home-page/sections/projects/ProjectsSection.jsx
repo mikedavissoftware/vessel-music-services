@@ -62,11 +62,11 @@ export default function ProjectsSection() {
         <hr className="secondary"/>
         {projectComponents("Live")}
 
-        <div className="projects__tiles-cont">
+        {/* <div className="projects__tiles-cont">
           <BehindTheMusicTile />
           <BehindTheMusicTile />
           <BehindTheMusicTile />
-        </div>
+        </div> */}
         <hr className="secondary"/>
 
       </div>
