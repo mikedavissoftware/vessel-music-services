@@ -29,12 +29,12 @@ export default function BehindTheMusicTile() {
           <img
             src={ProjectImage}
             alt={`${projectInfo.title} Poster`}
-            className={mouseOver ? ("projects__tile-img-bigger") : ("projects__tile-img")}
+            className="projects__tile-img"
             loading="lazy"
           />
         </Link>
 
-        <div className={mouseOver ? ("projects__tile-content") : ("projects__tile-content d-none")}>
+        <div className="projects__tile-content">
           <h3 className="projects__tile-content-title">{projectInfo.title}</h3>
           <h4 className="projects__tile-content-subtitle">{projectInfo.subTitle}</h4>
           <p className="projects__tile-content-desc">
