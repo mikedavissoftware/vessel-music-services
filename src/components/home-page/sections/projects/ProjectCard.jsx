@@ -8,8 +8,8 @@ export default function ProjectCard({ project, keys }) {
     projectInfo[key] = project[index]
   })
 
-  const imageUrl = `https://drive.google.com/uc?id=${projectInfo.image.slice(32, 65)}`
-  console.log(imageUrl)
+  const imageUrl = `/featured-works/${projectInfo.image}`
+  // console.log(imageUrl)
 
   return (
     <div class="projects__row">
